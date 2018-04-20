@@ -7,6 +7,7 @@ ADD apache-maven-3.5.3-bin.tar.gz /var/tmp/maven/
 
 #setting env
 ENV M2_HOME /var/tmp/maven/apache-maven-3.5.3
+ENV PATH $PATH:/bin:$M2_HOME/bin
 
 RUN mkdir /var/tmp/webapp/
 ADD ./demo /var/tmp/webapp/
